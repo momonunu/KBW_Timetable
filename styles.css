@@ -1,0 +1,33 @@
+.ttps-lesson {
+  position: relative;
+  text-align: center;
+  padding: 4px;
+  
+}
+
+
+.ttps-lesson:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 1px;
+  top:1px;
+  right:1px;
+  bottom: 1px;
+  background: #ff2121;
+  border-radius: 10px;
+  z-index: 0;
+}
+
+
+.ttps-lesson ul {
+  position: relative;
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  color: #000
+}
+
+.ttps-scheduler-table {
+  width: 90%;
+}
