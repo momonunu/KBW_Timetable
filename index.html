@@ -75,60 +75,10 @@
     <!-- Navbar end -->
 
     <!-- Main Site start -->
-    <select class="selectpicker">
-        <optgroup label="Klasse">
-            <option class="ttps-entity-option" value="1085">1aW</option>
-            <option class="ttps-entity-option" value="1086">1bW</option>
-            <option class="ttps-entity-option" value="1087">1cW</option>
-            <option class="ttps-entity-option" value="1088">1dW</option>
-            <option class="ttps-entity-option" value="1089">1eW</option>
-            <option class="ttps-entity-option" value="1090">1fW</option>
-
-            <option class="ttps-entity-option" value="1081">1aH</option>
-            <option class="ttps-entity-option" value="1082">1bH</option>
-
-            <option class="ttps-entity-option" value="1083">1aI</option>
-            <option class="ttps-entity-option" value="1084">1bI</option>
-
-
-            <option class="ttps-entity-option" value="1095">2aW</option>
-            <option class="ttps-entity-option" value="1098">2bW</option>
-            <option class="ttps-entity-option" value="1099">2cW</option>
-            <option class="ttps-entity-option" value="1100">2dW</option>
-            <option class="ttps-entity-option" value="1101">2eW</option>
-            <option class="ttps-entity-option" value="1102">2fW</option>
-
-            <option class="ttps-entity-option" value="1093">2aH</option>
-            <option class="ttps-entity-option" value="1096">2bH</option>
-
-            <option class="ttps-entity-option" value="1094">2aI</option>
-            <option class="ttps-entity-option" value="1097">2bI</option>
-            
-            
-            <option class="ttps-entity-option" value="1104">3aW</option>
-            <option class="ttps-entity-option" value="1106">3bW</option>
-            <option class="ttps-entity-option" value="1107">3cW</option>
-            <option class="ttps-entity-option" value="1108">3dW</option>
-            <option class="ttps-entity-option" value="1109">3eW</option>
-
-            <option class="ttps-entity-option" value="1103">3aH</option>
-            <option class="ttps-entity-option" value="1105">3bH</option>
-
-            <option class="ttps-entity-option" value="1110">3I</option>
-
-
-            <option class="ttps-entity-option" value="1112">4aW</option>
-            <option class="ttps-entity-option" value="1114">4bW</option>
-            <option class="ttps-entity-option" value="1115">4cW</option>
-            <option class="ttps-entity-option" value="1116">4dW</option>
-            <option class="ttps-entity-option" value="1117">4eW</option>
-        </optgroup>
-        <optgroup label="Lehrer">
-
-        </optgroup>
-        <optgroup label="Zimmer">
-
-        </optgroup>
+    <select class="selectpicker ttps-entity-option">
+        <optgroup id="class"label="Klassen:"></optgroup>
+        <optgroup id="teacher" label="Lehrer*innen:"></optgroup>
+        <optgroup id="room" label="Zimmer:"></optgroup>
     </select>
 
     <!-- JS Table start -->
@@ -151,6 +101,10 @@
         $(document).ready(function () {
             $("#ttps-content").load("https://timetable.ddns.net:8080/https://intranet.tam.ch/kbw/public/public-schedule?onlyTable=0&returnEntity=class&entityId=1088&date=2020-11-30&showBasicTimetable=1 .ttps-scheduler");
         });
+        document.getElementsByClassName("ttps-entity-option").className = "MyClass";
+    </script>
+    <script>
+        $('.ttps-entity-option').addClass('newClassWithYourStyles').removeClass('.ttps-entity-option');
     </script>
 
 </body>
