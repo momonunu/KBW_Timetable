@@ -3,11 +3,8 @@
     $("#class").load("https://timetable.ddns.net:8080/https://intranet.tam.ch/kbw/public/public-schedule?returnEntity=class .ttps-entity-list");
     $("#teacher").load("https://timetable.ddns.net:8080/https://intranet.tam.ch/kbw/public/public-schedule?returnEntity=teacher .ttps-entity-list");
     $("#room").load("https://timetable.ddns.net:8080/https://intranet.tam.ch/kbw/public/public-schedule?returnEntity=room .ttps-entity-list");
-    $('.ttps-entity-option').addClass('newClassWithYourStyles').removeClass('.ttps-entity-option');
+    // $('.ttps-entity-option').addClass('newClassWithYourStyles').removeClass('.ttps-entity-option');
 });
-
-
-
 
 
 // Load Timetable
