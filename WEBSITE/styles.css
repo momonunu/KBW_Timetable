@@ -14,7 +14,7 @@
   top:1px;
   right:1px;
   bottom: 1px;
-  background: #ff2121;
+  background: #7e7e7e;
   border-radius: 10px;
   z-index: 0;
 }
@@ -28,6 +28,46 @@
   color: #000
 }
 
-.ttps-scheduler-table {
-  width: 90%;
+.ttps-scheduler {
+  margin: 1%;
+  width: 98%;
 }
+
+.ttps-span-left {
+  font-weight: 600;
+  float: left;
+}
+
+
+.ttps-span-center {
+  float: left;
+}
+
+
+.ttps-span-right {
+  float: right;
+}
+
+li {
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 10%;
+}
+
+
+/*    .ttps-lesson {
+     position: relative;
+    }
+
+    .ttps-lesson ul li {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    
+    .ttps-lesson ul li span {
+      padding: 0;
+      margin: 0;
+    } */

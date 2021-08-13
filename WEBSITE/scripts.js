@@ -16,6 +16,13 @@ $(document).ready(function () {
 
 // Load Timetable
 $(document).ready(function () {
-    $("#ttps-content").load("https://timetable.ddns.net:8080/https://intranet.tam.ch/kbw/public/public-schedule?onlyTable=0&returnEntity=class&entityId=1088&date=2020-11-30&showBasicTimetable=1 .ttps-scheduler");
-    $('.ttps-entity-option').addClass('newClassWithYourStyles').removeClass('.ttps-entity-option');
+    $("#ttps-content").load("https://kbw-timetable.herokuapp.com/https://intranet.tam.ch/kbw/public/public-schedule?onlyTable=0&returnEntity=class&entityId=1177&date=2021-08-23&showBasicTimetable=0&width=99.99%25 .ttps-scheduler", function () {
+        $('.ttps-scheduler-table').addClass('table table-bordered border-dark');
+    });
+    //$('.ttps-entity-option').addClass('newClassWithYourStyles').removeClass('.ttps-entity-option');
 });
+
+$('.ttps-entity-option').on('changed.bs.select', function (e, clickedIndex, isSelected, previousValue) {
+    // do something...
+  });
+  
